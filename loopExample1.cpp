@@ -11,25 +11,28 @@
 // The sum is:_____
 // The average is:_______
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     string schoolNAme;
-    cout<<"Enter your school name: "<<endl;
-    cin>>schoolNAme;
-    for(int i =0;i<100;i++){
-        cout<<schoolNAme<<" "<<flush;
+    cout << "Enter your school name: " << endl;
+    getline(cin, schoolNAme);
+    for (int i = 0; i < 100; i++)
+    {
+        cout << schoolNAme << " " << flush;
     }
-    cout<<endl;
+    cout << endl;
     float num;
-    float sum =0;
-    for(int i =1;i<=5;i++){
-        cout<<"Enter number "<<i<<": "<<flush;
-        cin>>num;
-        sum = sum+num;
+    float sum = 0;
+    for (int i = 1; i <= 5; i++)
+    {
+        cout << "Enter number " << i << ": " << flush;
+        cin >> num;
+        sum = sum + num;
     }
-    cout<<"The sum is: "<<sum<<endl;
-    cout<<"The average is: "<<sum/5<<endl;
+    cout << "The sum is: " << sum << endl;
+    cout << "The average is: " << sum / 5 << endl;
     return 0;
 }
